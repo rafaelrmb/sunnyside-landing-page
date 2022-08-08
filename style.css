@@ -261,6 +261,20 @@ header .arrow-btn {
   margin-bottom: 8.125rem;
 }
 
+.main-nav {
+  gap: 3rem;
+}
+
+.main-nav .contact-btn {
+  padding-block: .7rem;
+  padding-inline: 1rem;
+  border-radius: 50px;
+}
+
+.main-nav .contact-btn:hover {
+  background-color: hsl(var(--yellow));
+}
+
 .main-nav__btn {
   display: none;
 }
@@ -304,6 +318,10 @@ header .arrow-btn {
 
   .main-nav.menu-expanded {
     top: 8%;
+  }
+
+  .main-nav .contact-btn {
+    background-color: hsl(var(--yellow));
   }
 }
 
@@ -414,4 +432,46 @@ footer {
 .footer__socials {
   margin-top: 3rem;
   gap: 2rem;
+}
+
+/* ----------------- LAYOUT MEDIA QUERIES ---------------- */
+@media (min-width: 60rem) {
+  /* HEADER */
+  header {
+    background-image: url(images/desktop/image-header.jpg);
+  }
+
+  header nav {
+    padding-inline: 2rem;
+  }
+
+  header h1 {
+    margin-bottom: 4rem;
+  }
+
+  header .arrow-btn {
+    margin-bottom: 20rem;
+  }
+
+  /* ABOUT US */
+  .about-us .card {
+    display: flex;
+    flex-direction: row-reverse;
+
+    text-align: left;
+  }
+
+  .about-us .card img {
+    flex-basis: 50%;
+  }
+
+  .about-us .card__text {
+    margin-block: auto;
+    flex-basis: 50%;
+    max-width: 50ch;
+  }
+
+  .about-us .card:nth-of-type(2) {
+    flex-direction: row;
+  }
 }
