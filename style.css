@@ -475,6 +475,34 @@ footer {
     flex-direction: row;
   }
 
+  /* SERVICES */
+  .services {
+    display: flex;
+  }
+
+  .services .card {
+    width: 50%;
+    align-items: center;
+  }
+
+  .services .card p {
+    max-width: 40ch;
+  }
+
+  .services .card.g-design {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  .services .card.photography {
+    background-image: url(images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
   /* TESTIMONIALS */
   .testimonials {
     padding: 4rem;
