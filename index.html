@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fraunces:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Sunnyside | Landing Page</title>
+  </head>
+  <body class="fs-500 ff-sans">
+    <header class="container text-center text-white">
+      <nav class="flex">
+        <img src="images/logo.svg" alt="sunnyside logo"/>
+        <ul class="main-nav flex ai-center">
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="main-nav__btn" aria-controls="navigation-menu" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
+      </nav>
+      <h1 class="ff-serif uppercase fw-900 fs-900 ls-2">We are creatives</h1>
+      <a href="#about-us"
+        ><img
+          class="arrow-btn"
+          src="images/icon-arrow-down.svg"
+          alt="white arrow pointing down icon"
+      /></a>
+    </header>
+    <main>
+      <section id="about-us" class="about-us text-center">
+        <div class="card">
+          <img
+            src="images/mobile/image-transform.jpg"
+            width="100%"
+            alt="an egg"
+          />
+          <div class="card__text container">
+            <h2 class="ff-serif fw-700 fs-800 text-dark-blue">Transform your brand</h2>
+            <p class="fw-500 text-moderate-cyan">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="#" class="card__learn-more uppercase fw-700 ff-serif text-dark-blue">Learn more</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/mobile/image-stand-out.jpg"
+            width="100%"
+            alt="an egg"
+          />
+          <div class="card__text container">
+            <h2 class="ff-serif fw-700 fs-800 text-dark-blue">Stand out to the right audience</h2>
+            <p class="fw-500 text-moderate-cyan">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we'll build and
+              extend your brand in digital places.
+            </p>
+            <a href="#" class="card__learn-more uppercase fw-700 ff-serif text-dark-blue">Learn more</a>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services text-center">
+        <div>
+          <div class="card g-design container text-desat-cyan flex">
+            <h2 class="ff-serif fw-700">Graphic Design</h2>
+            <p class="fw-500">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients'
+              attention.
+            </p>
+          </div>
+          <div class="card photography container text-dark-blue flex">
+            <h2 class="ff-serif fw-700">Photography</h2>
+            <p class="fw-500">
+              Increase your credibility by getting the most stunning, high
+              quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials text-center container">
+        <h3 class="uppercase ls-2 ff-serif text-gray-blue fs-500 fw-700">Client testimonials</h3>
+        <div class="testimonial flex">
+          <img src="images/image-emily.jpg" alt="blonde girl with long hair" />
+          <p class="text-desat-cyan fw-600">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="testimonial__user">
+            <span class="user__name block fw-900 ff-serif text-dark-blue">Emily R.</span>
+            <span class="user__role text-gray-blue fw-500 fs-300">Marketing Director</span>
+          </div>
+        </div>
+        <div class="testimonial flex">
+          <img src="images/image-thomas.jpg" alt="dark haired man smiling" />
+          <p class="text-desat-cyan fw-600">
+            Sunnyside's enthusiasm coupled with their keen interest in our
+            brand's success made it a satisfying and enjoyable experience.
+          </p>
+          <div class="testimonial__user">
+            <span class="user__name block fw-900 ff-serif text-dark-blue"">Thomas S.</span>
+            <span class="user__role text-gray-blue fw-500 fs-300">Chief Operating Officer</span>
+          </div>
+        </div>
+        <div class="testimonial flex">
+          <img src="images/image-jennie.jpg" alt="woman smiling" />
+          <p class="text-desat-cyan fw-600">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div class="testimonial__user">
+            <span class="user__name block fw-900 ff-serif text-dark-blue"">Jennie F.</span>
+            <span class="user__role text-gray-blue fw-500 fs-300">Business Owner</span>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery grid">
+        <img
+          src="images/mobile/image-gallery-milkbottles.jpg"
+          alt="milk bottles with a cloudy background"
+        />
+        <img
+          src="images/mobile/image-gallery-orange.jpg"
+          alt="an orange in a white plate"
+        />
+        <img src="images/mobile/image-gallery-cone.jpg" alt="ice cream cone" />
+        <img
+          src="images/mobile/image-gallery-sugar-cubes.jpg"
+          alt="sugar cubes stacked"
+        />
+      </section>
+      <footer id="contact" class="bg-light text-moderate-cyan text-center container flex">
+        <a class="footer__logo fw-800 fs-900" href="#">sunnyside</a>
+        <div class="footer__nav">
+          <ul class="flex">
+            <li class="fw-500">
+              <a href="#about-us">About</a>
+            </li>
+            <li class="fw-500">
+              <a href="#services">Services</a>
+            </li>
+            <li class="fw-500">
+              <a href="#gallery">Projects</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials flex">
+          <a href="#"
+            ><img src="images/icon-facebook.svg" alt="facebook icon"
+          /></a>
+          <a href="#"
+            ><img src="images/icon-instagram.svg" alt="facebook icon"
+          /></a>
+          <a href="#"
+            ><img src="images/icon-twitter.svg" alt="facebook icon"
+          /></a>
+          <a href="#"
+            ><img src="images/icon-pinterest.svg" alt="facebook icon"
+          /></a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
