@@ -217,7 +217,7 @@ a {
   gap: 1rem;
 }
 
-.flex .ai-center {
+.flex.ai-center {
   align-items: center;
 }
 
@@ -385,6 +385,7 @@ header .arrow-btn {
 /* TESTIMONIALS */
 .testimonials {
   margin-block: 4rem;
+  flex-direction: column;
 }
 
 .testimonial {
