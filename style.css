@@ -265,6 +265,10 @@ header .arrow-btn {
   gap: 3rem;
 }
 
+.main-nav li:hover {
+  color: hsl(var(--yellow));
+}
+
 .main-nav .contact-btn {
   padding-block: 0.7rem;
   padding-inline: 1rem;
